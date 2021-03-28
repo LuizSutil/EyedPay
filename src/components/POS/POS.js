@@ -1,4 +1,3 @@
-import Slider from '@brlja/react-native-slider';
 import React from 'react'
 import {View, Text, StyleSheet, TouchableOpacity, TextInput} from 'react-native'
 import SliderFun from '../shared/SliderFun'
@@ -12,7 +11,12 @@ export const POS = () => {
             flex:1,
             //justifyContent:'center'
             alignItems: 'center',
-            marginTop: 100
+            marginTop: 30
+        },
+        eyedPay: {
+            color: '#A86916',
+            fontSize: 50,
+            marginBottom:60
         },
         sliderText:{
             fontSize: 20,
@@ -36,11 +40,6 @@ export const POS = () => {
             textAlignVertical:'center',
             fontSize:40
         },
-        eyedPay: {
-            color: '#A86916',
-            fontSize: 50,
-            marginBottom:60
-        },
         descriptor:{
             fontSize:18,
             fontWeight:'bold',
@@ -62,6 +61,7 @@ export const POS = () => {
         },
         buttonView:{
             marginTop:100,
+            marginBottom:50
         }
         
     })
@@ -84,6 +84,9 @@ export const POS = () => {
                         <Text style={styles.textCharge}>Charge Amount</Text>
                 </TouchableOpacity>
             </View>
+            <TouchableOpacity style={styles.discardBtn} >
+                    <Text style={{fontSize:20, color:'#A86916'}}>Discard</Text>
+            </TouchableOpacity>
         </View>
     )
 }
