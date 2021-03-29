@@ -84,7 +84,7 @@ export const POS = () => {
                         <Text style={styles.textCharge}>Charge Amount</Text>
                 </TouchableOpacity>
             </View>
-            <TouchableOpacity style={styles.discardBtn} >
+            <TouchableOpacity>
                     <Text style={{fontSize:20, color:'#A86916'}}>Discard</Text>
             </TouchableOpacity>
         </View>

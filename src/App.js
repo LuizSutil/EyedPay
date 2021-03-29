@@ -1,11 +1,11 @@
 import React from 'react'
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native'
-import POS from './components/POS/POS'
+import RegComplete from './components/RegComplete/RegComplete'
 
 export const App = () => {
     return (
     
-        <POS></POS>
+        <RegComplete></RegComplete>
     )
 }
 
